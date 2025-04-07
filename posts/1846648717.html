@@ -9,7 +9,7 @@
     <meta http-equiv="Cache-Control" content="no-siteapp">
     <title>
         
-            伺服器插件用法
+            個人記事
         
     </title>
     <link rel="shortcut icon" href="#"/>
@@ -37,34 +37,26 @@
     <div class="vertical">
         <div class="inner">
             
-                <h1 class="header-subtitle">伺服器插件用法</h1>
+                <h1 class="header-subtitle">個人記事</h1>
                 <div class="header-subinfo">
                     <p class="article-info-text">
                         <span>
-                            <i class="iconfont icon-time"></i> 发表时间：2025-04-02
+                            <i class="iconfont icon-time"></i> 发表时间：2025-04-07
                         </span>
                         
                             
-                                <span id="/posts/3921564525.html" class="leancloud_visitors" data-flag-title="伺服器插件用法">
+                                <span id="/posts/1846648717.html" class="leancloud_visitors" data-flag-title="個人記事">
                                     <i class="iconfont icon-browse"></i> 阅读：<sapn class="leancloud-visitors-count"></span>
                                 </span>
                             
                             
                                 <span>
-                                    <i class="iconfont icon-interactive"></i> 评论：<span class="valine-comment-count" data-xid="/posts/3921564525.html"></span>
+                                    <i class="iconfont icon-interactive"></i> 评论：<span class="valine-comment-count" data-xid="/posts/1846648717.html"></span>
                                 </span>
                               
                         
                     </p>
                     
-                        
-                            <span class="category-color">Minecraft</span>
-                        
-                    
-                    
-                        
-                            <span class="tag-color">Minecraft server</span>
-                        
                     
                 </div>
             
@@ -78,132 +70,32 @@
         <div id="article">
             <div class="toc"></div>
             <div class="article-body">
-                <h1 id="EssentialsX-詳細指令"><a href="#EssentialsX-詳細指令" class="headerlink" title="EssentialsX 詳細指令"></a>EssentialsX 詳細指令</h1><h2 id="玩家基礎指令"><a href="#玩家基礎指令" class="headerlink" title="玩家基礎指令"></a>玩家基礎指令</h2><ul>
-<li><code>/help</code> – 查看指令幫助。</li>
-<li><code>/spawn</code> – 傳送到出生點。</li>
-<li><code>/home</code> – 傳送到你的家。</li>
-<li><code>/sethome &lt;名稱&gt;</code> – 設置一個家。</li>
-<li><code>/delhome &lt;名稱&gt;</code> – 刪除一個家。</li>
-<li><code>/tpa &lt;玩家&gt;</code> – 請求傳送到某玩家。</li>
-<li><code>/tpahere &lt;玩家&gt;</code> – 請求讓某玩家傳送到你這裡。</li>
-<li><code>/tpaccept</code> – 接受傳送請求。</li>
-<li><code>/tpdeny</code> – 拒絕傳送請求。</li>
-<li><code>/back</code> – 回到上一個位置（死亡或傳送後）。</li>
-<li><code>/warp &lt;名稱&gt;</code> – 傳送到指定地標。</li>
-<li><code>/setwarp &lt;名稱&gt;</code> – 設置一個地標。</li>
-<li><code>/delwarp &lt;名稱&gt;</code> – 刪除一個地標。</li>
-<li><code>/compass</code> – 顯示當前方向。</li>
-<li><code>/ptime &lt;時間&gt;</code> – 設置個人時間（如 day、night）。</li>
-<li><code>/pweather &lt;天氣&gt;</code> – 設置個人天氣（如 sun、rain）。</li>
-</ul>
-<h2 id="經濟與商店指令"><a href="#經濟與商店指令" class="headerlink" title="經濟與商店指令"></a>經濟與商店指令</h2><ul>
-<li><code>/bal</code> 或 <code>/balance</code> – 查看你的餘額。</li>
-<li><code>/pay &lt;玩家&gt; &lt;金額&gt;</code> – 向某玩家支付金額。</li>
-<li><code>/baltop</code> – 查看伺服器財富排行榜。</li>
-<li><code>/sell &lt;數量&gt;</code> – 出售手中的物品（需配合商店插件）。</li>
-<li><code>/worth &lt;物品&gt;</code> – 查看物品的收購價格。</li>
-</ul>
-<h2 id="物品與工具指令"><a href="#物品與工具指令" class="headerlink" title="物品與工具指令"></a>物品與工具指令</h2><ul>
-<li><code>/item &lt;物品&gt;</code> – 獲取指定物品。</li>
-<li><code>/hat</code> – 將手中的物品戴在頭上。</li>
-<li><code>/repair</code> – 修復手中的物品。</li>
-<li><code>/more</code> – 將手中的物品堆疊到最大數量。</li>
-<li><code>/enchant &lt;附魔&gt; &lt;等級&gt;</code> – 為手中的物品添加附魔。</li>
-<li><code>/powertool &lt;指令&gt;</code> – 將指令綁定到手中的物品（點擊觸發）。</li>
-</ul>
-<h2 id="社交與聊天指令"><a href="#社交與聊天指令" class="headerlink" title="社交與聊天指令"></a>社交與聊天指令</h2><ul>
-<li><code>/msg &lt;玩家&gt; &lt;訊息&gt;</code> 或 <code>/m &lt;玩家&gt; &lt;訊息&gt;</code> – 私訊某玩家。</li>
-<li><code>/r &lt;訊息&gt;</code> – 回覆上一個私訊。</li>
-<li><code>/ignore &lt;玩家&gt;</code> – 忽略某玩家的訊息。</li>
-<li><code>/afk</code> – 標記自己為離開狀態。</li>
-<li><code>/me &lt;動作&gt;</code> – 發送一個動作訊息（如 <code>/me 笑了</code>）。</li>
-<li><code>/nick &lt;暱稱&gt;</code> – 更改你的暱稱。</li>
-</ul>
-<h2 id="管理員指令"><a href="#管理員指令" class="headerlink" title="管理員指令"></a>管理員指令</h2><ul>
-<li><code>/gamemode &lt;模式&gt; [玩家]</code> – 更改遊戲模式（如 survival、creative）。</li>
-<li><code>/god</code> – 切換無敵模式。</li>
-<li><code>/fly</code> – 切換飛行模式。</li>
-<li><code>/vanish</code> 或 <code>/v</code> – 隱身。</li>
-<li><code>/invsee &lt;玩家&gt;</code> – 查看某玩家的背包。</li>
-<li><code>/enderchest</code> 或 <code>/ec</code> – 查看自己的終界箱。</li>
-<li><code>/clearinventory</code> 或 <code>/ci</code> – 清空背包。</li>
-<li><code>/kick &lt;玩家&gt; [原因]</code> – 踢出某玩家。</li>
-<li><code>/ban &lt;玩家&gt; [原因]</code> – 封禁某玩家。</li>
-<li><code>/mute &lt;玩家&gt; [時間]</code> – 禁言某玩家。</li>
-<li><code>/unban &lt;玩家&gt;</code> – 解除封禁。</li>
-<li><code>/tp &lt;玩家&gt;</code> – 傳送到某玩家。</li>
-<li><code>/tphere &lt;玩家&gt;</code> – 讓某玩家傳送到你這裡。</li>
-<li><code>/tpo &lt;玩家&gt;</code> – 強制傳送到某玩家。</li>
-<li><code>/tpohere &lt;玩家&gt;</code> – 強制讓某玩家傳送到你這裡。</li>
-<li><code>/tpall</code> – 將所有玩家傳送到你這裡。</li>
-<li><code>/sudo &lt;玩家&gt; &lt;指令&gt;</code> – 強制某玩家執行指令。</li>
-</ul>
-<h2 id="伺服器管理指令"><a href="#伺服器管理指令" class="headerlink" title="伺服器管理指令"></a>伺服器管理指令</h2><ul>
-<li><code>/setspawn</code> – 設置出生點。</li>
-<li><code>/motd</code> – 設置伺服器的每日訊息。</li>
-<li><code>/broadcast &lt;訊息&gt;</code> 或 <code>/bc &lt;訊息&gt;</code> – 發送全服公告。</li>
-<li><code>/kill &lt;玩家&gt;</code> – 殺死某玩家。</li>
-<li><code>/heal &lt;玩家&gt;</code> – 治療某玩家。</li>
-<li><code>/feed &lt;玩家&gt;</code> – 餵飽某玩家。</li>
-<li><code>/ext &lt;玩家&gt;</code> – 撲滅某玩家身上的火。</li>
-<li><code>/speed &lt;速度&gt; [玩家]</code> – 設置移動速度（1-10）。</li>
-<li><code>/seen &lt;玩家&gt;</code> – 查看某玩家最後上線時間。</li>
-<li><code>/socialspy</code> – 監聽私訊（管理員專用）。</li>
-</ul>
-<h2 id="其他實用指令"><a href="#其他實用指令" class="headerlink" title="其他實用指令"></a>其他實用指令</h2><ul>
-<li><code>/workbench</code> 或 <code>/wb</code> – 打開工作台。</li>
-<li><code>/anvil</code> – 打開鐵砧。</li>
-<li><code>/craft</code> – 打開合成台。</li>
-<li><code>/enderchest</code> 或 <code>/ec</code> – 打開終界箱。</li>
-<li><code>/disposal</code> – 打開垃圾桶。</li>
-<li><code>/near</code> – 查看附近的玩家。</li>
-<li><code>/suicide</code> – 自殺。</li>
-<li><code>/jump</code> – 傳送到你看向的位置。</li>
-<li><code>/thru</code> – 穿過面前的牆壁。</li>
-</ul>
-<h2 id="其他插件指令"><a href="#其他插件指令" class="headerlink" title="其他插件指令"></a>其他插件指令</h2><h3 id="Floodgate"><a href="#Floodgate" class="headerlink" title="Floodgate"></a>Floodgate</h3><p><strong>用途：</strong> 允許基岩版玩家加入 Java 版伺服器（需配合 Geyser）。</p>
-<h3 id="Geyser"><a href="#Geyser" class="headerlink" title="Geyser"></a>Geyser</h3><p><strong>用途：</strong> 讓基岩版玩家可以連接到 Java 版伺服器。</p>
-<p>指令：</p>
-<ul>
-<li><code>/geyser help</code> – 查看 Geyser 指令幫助。</li>
-<li><code>/geyser reload</code> – 重新載入 Geyser 配置。</li>
-<li><code>/geyser version</code> – 查看 Geyser 版本。</li>
-</ul>
-<h3 id="LuckPerms"><a href="#LuckPerms" class="headerlink" title="LuckPerms"></a>LuckPerms</h3><p><strong>用途：</strong> 管理玩家權限和群組。</p>
-<p>指令：</p>
-<ul>
-<li><code>/lp</code> – 查看 LuckPerms 指令幫助。</li>
-<li><code>/lp user &lt;玩家&gt; permission set &lt;權限&gt;</code> – 為玩家設置權限。</li>
-<li><code>/lp group &lt;群組&gt; permission set &lt;權限&gt;</code> – 為群組設置權限。</li>
-<li><code>/lp user &lt;玩家&gt; parent add &lt;群組&gt;</code> – 將玩家加入群組。</li>
-<li><code>/lp creategroup &lt;群組&gt;</code> – 創建新群組。</li>
-<li><code>/lp deletegroup &lt;群組&gt;</code> – 刪除群組。</li>
-<li><code>/lp listgroups</code> – 列出所有群組。</li>
-<li><code>/lp editor</code> – 打開權限編輯器。</li>
-</ul>
-<h3 id="Maintenance"><a href="#Maintenance" class="headerlink" title="Maintenance"></a>Maintenance</h3><p><strong>用途：</strong> 設置伺服器維護模式。</p>
-<p>指令：</p>
-<ul>
-<li><code>/maintenance</code> – 切換維護模式。</li>
-<li><code>/maintenance add &lt;玩家&gt;</code> – 允許某玩家在維護期間進入。</li>
-<li><code>/maintenance remove &lt;玩家&gt;</code> – 移除某玩家的維護權限。</li>
-<li><code>/maintenance list</code> – 查看允許進入的玩家列表。</li>
-</ul>
-
+                <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="哦，这是一个无效的密码，请检查并重试。" data-whm="哦，这些解密内容无法验证，但你仍然可以查看。">
+  <script id="hbeData" type="hbeData" data-hmacdigest="a1a6e21af4ca9ad7a4d0a075881d695ff201e687c6fc1fe97804654174855e8e">d1e0cc96615564f3d581ffc43aee208e663e7acfe0865fbd23b550c6a3abd0e9</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">請輸入密碼</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
                 
                 <p class="end">__END__</p>
             </div>
             <div class="article-footer">
                 <div class="suffix-box">
     <div class="suffix-box-left">
-        <img src="/image/article/logo.png" alt="ian">
+        <img src="/image/sidebar/avatar.jpg" alt="ian">
     </div>
     <div class="suffix-box-right">
         <span class="suffix-box-title">文章作者：</span>ian
         <br>
-        <span class="suffix-box-title">文章出处：</span><a href="https://ianip.eu.org" target="_blank">ian</a>
+        <span class="suffix-box-title">文章出处：</span><a href="/posts/1846648717.html" target="_blank">個人記事</a>
         <br>
-        <span class="suffix-box-title">作者签名：</span>一個喜歡程式的人
+        <span class="suffix-box-title">作者签名：</span>简单地活着, 肆意又精彩.
         <br>
         <span class="suffix-box-title">关于主题：</span><a href="https://github.com/first19326/Hexo-LiveForCode" target="_blank">Hexo - Live For Code</a>
         <br>
@@ -213,26 +105,11 @@
     <div style="clear: both;"></div>
 </div>
                 
-                    <div class="category">
-                        分类：
-                        
-                            <a href="/category/Minecraft/">Minecraft</a>
-                        
-                    </div>
-                
-                
-                    <div class="tag">
-                        标签：
-                        
-                            <a href="/tag/Minecraft-server/">Minecraft server</a>
-                        
-                    </div>
                 
                 <div class="article-prev-next">
                     
-                        <a href="/posts/1846648717.html" class="prev-prefix">« </a> 上一篇：    <a href="/posts/1846648717.html" title="发布于 2025-04-07 06:00">個人記事</a>
-                        <br>
                     
+                        <a href="/posts/3921564525.html" class="next-prefix">» </a> 下一篇：    <a href="/posts/3921564525.html" title="发布于 2025-04-02 06:01">伺服器插件用法</a>
                     
                 </div>
             </div>
