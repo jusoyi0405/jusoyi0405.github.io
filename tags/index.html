@@ -61,14 +61,17 @@
                 <div id="twikoo"></div>
 <script src="https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js"></script>
 <script>
-  // ⛏️ 自動找出 /posts/ 開頭的路徑
-  const match = location.pathname.match(/\/posts\/[^\?#\/]*/);
-  const cleanPath = match ? match[0] : location.pathname.replace(/\.html$/, '').replace(/\/$/, '') || '/';
+  // ⛏️ 自動處理並移除 `.html` 和末尾的 `/`
+  const cleanPath = location.pathname.replace(/\.html$/, '').replace(/\/$/, '') || '/';
+  
+  // 確保 path 開頭是 `/posts/` 且去除 `.html`，同時處理其他情況
+  const match = cleanPath.match(/\/posts\/[^\?#\/]*/);
+  const finalPath = match ? match[0] : cleanPath;
 
   twikoo.init({
     el: '#twikoo',
-    envId: 'https://mytwikoo-kappa.vercel.app', // 你的 Twikoo API 端點
-    path: cleanPath
+    envId: 'https://mytwikoo-kappa.vercel.app', // 你的 Twikoo API
+    path: finalPath // 使用處理過的 path
   });
 </script>
 
