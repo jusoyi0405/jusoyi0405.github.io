@@ -120,7 +120,7 @@
   twikoo.init({
     el: '#twikoo',
     envId: 'https://mytwikoo-kappa.vercel.app/', // ✅ 請換成你自己的 Twikoo 後端地址
-    path: window.location.pathname // 或 window.location.href 確保每篇文章唯一識別
+    path: location.pathname.replace(/\/$/, '') || '/'
   });
 </script>
 
