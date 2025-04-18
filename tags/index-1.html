@@ -9,7 +9,7 @@
     <meta http-equiv="Cache-Control" content="no-siteapp">
     <title>
         
-            归档
+            tags
         
     </title>
     <link rel="shortcut icon" href="#"/>
@@ -32,13 +32,13 @@
 <!-- hexo injector head_end start --><script src="https://cdn.jsdelivr.net/gh/BP-Devteam/sitescansense/s3module.min.js"></script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head>
 <body>
     <a id="cover"></a>
-    <link type="text/css" rel="stylesheet" href="/css/archive.css">
+    <link type="text/css" rel="stylesheet" href="/css/page.css">
 <link rel="stylesheet" href="/css/twikoo-custom.css">
 <div id="header" class="header">
     <div class="vertical">
         <div class="inner">
             
-                <h1 class="header-subtitle">归档</h1>
+                <h1 class="header-subtitle">tags</h1>
                 <div class="header-subinfo">
                     <p class="article-info-text Chinese"></p>
                     <p class="article-info-text English"></p>                  
@@ -50,51 +50,28 @@
 </div>
 <div id="container">
     
+        <!-- 独立页面 -->
         
-            <!-- 归档页面、分类归档页面、标签归档页面 -->
-            <div class="articles">
-                <div class="articles-wrap">
-                    <span class="archive-move-on"></span>
-                    <span class="archive-counter">
-                        
-                            目前共计 2 篇日志，继续加油！
-                        
-                    </span>
+            <div id="article">
+                <div class="article-body">
                     
                     
-                        
-                            <div class="archive-title">
-                                <h2 class="archive-year">2025</h2>
-                            </div>
-                            
-                           
-                        <div class="article">
-                            <div class="article-header">
-                                <h1 class="article-title"><a href="/posts/1846648717.html"><span>個人記事</span></a></h1>
-                                <div class="article-meta">
-                                    <span class="article-time">04-07</span>
-                                </div>
-                            </div>
-                        </div>
-                    
-                           
-                        <div class="article">
-                            <div class="article-header">
-                                <h1 class="article-title"><a href="/posts/3921564525.html"><span>伺服器插件用法</span></a></h1>
-                                <div class="article-meta">
-                                    <span class="article-time">04-02</span>
-                                </div>
-                            </div>
-                        </div>
                     
                 </div>
+                <div id="twikoo"></div>
+<script src="https://cdn.jsdelivr.net/npm/twikoo@latest/dist/twikoo.all.min.js"></script>
+<script>
+  twikoo.init({
+    envId: "https://mytwikoo-kappa.vercel.app/",
+    el: "#twikoo",
+    path: location.pathname
+  });
+</script>
+
             </div>
-            
         
     
 </div>
-<span>瀏覽次數:  次</span>
-
     <div id="footer">
     <div><span class='face'>ღゝ◡╹)ノ♡</span></div><div>【人生若只如初见<span><i class='iconfont icon-like-fill'></i></span>何事秋风悲画扇】</div>
 </div>
@@ -130,7 +107,7 @@
                     
                         <li class=""><a href="/tag" class="" target="_self"><span class="iconfont icon-discount-fill"></span>标签</a></li>
                     
-                        <li class=" active "><a href="/archive" class="" target="_self"><span class="iconfont icon-calendar-fill"></span>归档</a></li>
+                        <li class=""><a href="/archive" class="" target="_self"><span class="iconfont icon-calendar-fill"></span>归档</a></li>
                     
                         <li class=""><a href="/about" class="" target="_self"><span class="iconfont icon-about-fill"></span>关于</a></li>
                     
