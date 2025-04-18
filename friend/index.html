@@ -165,13 +165,14 @@
                 <div id="twikoo"></div>
 <script src="https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js"></script>
 <script>
-  // 根據文章網址自訂留言 path（去掉 .html）
-  const pathname = location.pathname.replace(/\.html$/, '').replace(/\/$/, '') || '/';
-  
+  // ⛏️ 自動找出 /posts/ 開頭的路徑
+  const match = location.pathname.match(/\/posts\/[^\?#\/]*/);
+  const cleanPath = match ? match[0] : location.pathname.replace(/\.html$/, '').replace(/\/$/, '') || '/';
+
   twikoo.init({
     el: '#twikoo',
-    envId: 'https://mytwikoo-kappa.vercel.app',
-    path: pathname // ✅ 統一 path
+    envId: 'https://mytwikoo-kappa.vercel.app', // 你的 Twikoo API 端點
+    path: cleanPath
   });
 </script>
 
