@@ -1,0 +1,69 @@
+/* Twikoo 註解區的背景保持黑色風格，並設置透明背景 */
+#twikoo {
+    background: url("https://photo.ianip.eu.org/file/1744888692368_陎諾%20漆阨%20藝屾躓%20啞伎赽雄鞦族祧_捨偉族祧.jpg") no-repeat center top;
+    background-size: cover;
+    padding: 3rem;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    max-width: 900px;
+    margin: 3rem auto;
+    backdrop-filter: blur(6px); /* 讓背景模糊化 */
+    background-color: rgba(0, 0, 0, 0.4); /* 背景顏色保持透明，並略帶黑色 */
+    color: #fff; /* 文字顏色 */
+  }
+  
+  /* 文字區域 */
+  .tk-content {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #fff;
+  }
+  
+  /* 輸入框 */
+  .tk-input, .tk-textarea {
+    border: 2px solid #444;
+    padding: 12px;
+    font-size: 16px;
+    background-color: rgba(34, 34, 34, 0.7); /* 輸入框背景透明 */
+    color: #fff;
+    border-radius: 6px; /* 輕微圓角 */
+  }
+  
+  .tk-input:focus, .tk-textarea:focus {
+    border-color: #666;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+    background-color: rgba(51, 51, 51, 0.8); /* 聚焦時背景稍微變暗 */
+  }
+  
+  /* 發送按鈕 */
+  .tk-submit {
+    background: rgba(68, 68, 68, 0.8); /* 按鈕背景透明 */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+  }
+  
+  /* 每條留言區 */
+  .tk-comment {
+    background-color: rgba(255, 255, 255, 0.15); /* 留言區背景透明 */
+    padding: 20px;
+    margin-top: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    border-radius: 6px;
+    font-size: 17px;
+    line-height: 1.8;
+  }
+  
+  /* 每條留言區的背景顏色 */
+  .tk-comment:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.2); /* 奇數留言背景更亮一些 */
+  }
+  
+  .tk-comment:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.1); /* 偶數留言保持透明 */
+  }
+  

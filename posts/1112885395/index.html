@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no">
+    <meta name="referrer" content="origin">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <title>
+        
+            伺服器插件用法
+        
+    </title>
+    <link rel="shortcut icon" href="#"/>
+
+    <link type="text/css" rel="stylesheet" href="/font/LongCang.css">
+    <link type="text/css" rel="stylesheet" href="/font/Monda.css">
+    <link type="text/css" rel="stylesheet" href="/font/NotoSansSC.css">
+    <link type="text/css" rel="stylesheet" href="/font/NotoSerifSC.css">
+    <link type="text/css" rel="stylesheet" href="/font/Playball.css">
+    <link type="text/css" rel="stylesheet" href="/font/PTMono.css">
+    <link type="text/css" rel="stylesheet" href="/font/Roboto.css">
+    <link type="text/css" rel="stylesheet" href="/font/RobotoSlab.css">
+    <link type="text/css" rel="stylesheet" href="/font/Rosario.css">
+    <link type="text/css" rel="stylesheet" href="/font/UbuntuMono.css">
+
+    <link type="text/css" rel="stylesheet" href="/css/base.css">
+    <link type="text/css" rel="stylesheet" href="/css/code.css">
+
+    <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
+<meta name="generator" content="Hexo 7.3.0"></head>
+<body>
+    <a id="cover"></a>
+    <link type="text/css" rel="stylesheet" href="/css/post.css">
+<div id="header" class="header">
+    <div class="vertical">
+        <div class="inner">
+            
+                <h1 class="header-subtitle">伺服器插件用法</h1>
+                <div class="header-subinfo">
+                    <p class="article-info-text">
+                        <span>
+                            <i class="iconfont icon-time"></i> 发表时间：2025-04-28
+                        </span>
+                        
+                            
+                                <span id="/posts/1112885395/" class="leancloud_visitors" data-flag-title="伺服器插件用法">
+                                    <i class="iconfont icon-browse"></i> 阅读：<sapn class="leancloud-visitors-count"></span>
+                                </span>
+                            
+                            
+                                <span>
+                                    <i class="iconfont icon-interactive"></i> 评论：<span class="valine-comment-count" data-xid="/posts/1112885395/"></span>
+                                </span>
+                              
+                        
+                    </p>
+                    
+                        
+                            <span class="category-color">mc server</span>
+                        
+                    
+                    
+                        
+                            <span class="tag-color">標籤</span>
+                        
+                    
+                </div>
+            
+        </div>
+    </div>
+    
+</div>
+<link rel="stylesheet" href="/css/twikoo-custom.css">
+
+<div id="container">
+    
+        <!-- 文章页面 -->
+        <div id="article">
+            <div class="toc"></div>
+            <div class="article-body">
+                <h1 id="EssentialsX-詳細指令"><a href="#EssentialsX-詳細指令" class="headerlink" title="EssentialsX 詳細指令"></a>EssentialsX 詳細指令</h1><h2 id="玩家基礎指令"><a href="#玩家基礎指令" class="headerlink" title="玩家基礎指令"></a>玩家基礎指令</h2><p>&#x2F;help – 查看指令幫助。<br>&#x2F;spawn – 傳送到出生點。<br>&#x2F;home – 傳送到你的家。<br>&#x2F;sethome &lt;名稱&gt; – 設置一個家。<br>&#x2F;delhome &lt;名稱&gt; – 刪除一個家。<br>&#x2F;tpa &lt;玩家&gt; – 請求傳送到某玩家。<br>&#x2F;tpahere &lt;玩家&gt; – 請求讓某玩家傳送到你這裡。<br>&#x2F;tpaccept – 接受傳送請求。<br>&#x2F;tpdeny – 拒絕傳送請求。<br>&#x2F;back – 回到上一個位置（死亡或傳送後）。<br>&#x2F;warp &lt;名稱&gt; – 傳送到指定地標。<br>&#x2F;setwarp &lt;名稱&gt; – 設置一個地標。<br>&#x2F;delwarp &lt;名稱&gt; – 刪除一個地標。<br>&#x2F;compass – 顯示當前方向。<br>&#x2F;ptime &lt;時間&gt; – 設置個人時間（如 day、night）。<br>&#x2F;pweather &lt;天氣&gt; – 設置個人天氣（如 sun、rain）。</p>
+<h2 id="經濟與商店指令"><a href="#經濟與商店指令" class="headerlink" title="經濟與商店指令"></a>經濟與商店指令</h2><p>&#x2F;bal 或 &#x2F;balance – 查看你的餘額。<br>&#x2F;pay &lt;玩家&gt; &lt;金額&gt; – 向某玩家支付金額。<br>&#x2F;baltop – 查看伺服器財富排行榜。<br>&#x2F;sell &lt;數量&gt; – 出售手中的物品（需配合商店插件）。<br>&#x2F;worth &lt;物品&gt; – 查看物品的收購價格。</p>
+<h2 id="物品與工具指令"><a href="#物品與工具指令" class="headerlink" title="物品與工具指令"></a>物品與工具指令</h2><p>&#x2F;item &lt;物品&gt; – 獲取指定物品。<br>&#x2F;hat – 將手中的物品戴在頭上。<br>&#x2F;repair – 修復手中的物品。<br>&#x2F;more – 將手中的物品堆疊到最大數量。<br>&#x2F;enchant &lt;附魔&gt; &lt;等級&gt; – 為手中的物品添加附魔。<br>&#x2F;powertool &lt;指令&gt; – 將指令綁定到手中的物品（點擊觸發）。</p>
+<h2 id="社交與聊天指令"><a href="#社交與聊天指令" class="headerlink" title="社交與聊天指令"></a>社交與聊天指令</h2><p>&#x2F;msg &lt;玩家&gt; &lt;訊息&gt; 或 &#x2F;m &lt;玩家&gt; &lt;訊息&gt; – 私訊某玩家。<br>&#x2F;r &lt;訊息&gt; – 回覆上一個私訊。<br>&#x2F;ignore &lt;玩家&gt; – 忽略某玩家的訊息。<br>&#x2F;afk – 標記自己為離開狀態。<br>&#x2F;me &lt;動作&gt; – 發送一個動作訊息（如 &#x2F;me 笑了）。<br>&#x2F;nick &lt;暱稱&gt; – 更改你的暱稱。</p>
+<h2 id="管理員指令"><a href="#管理員指令" class="headerlink" title="管理員指令"></a>管理員指令</h2><p>&#x2F;gamemode &lt;模式&gt; [玩家] – 更改遊戲模式（如 survival、creative）。<br>&#x2F;god – 切換無敵模式。<br>&#x2F;fly – 切換飛行模式。<br>&#x2F;vanish 或 &#x2F;v – 隱身。<br>&#x2F;invsee &lt;玩家&gt; – 查看某玩家的背包。<br>&#x2F;enderchest 或 &#x2F;ec – 查看自己的終界箱。<br>&#x2F;clearinventory 或 &#x2F;ci – 清空背包。<br>&#x2F;kick &lt;玩家&gt; [原因] – 踢出某玩家。<br>&#x2F;ban &lt;玩家&gt; [原因] – 封禁某玩家。<br>&#x2F;mute &lt;玩家&gt; [時間] – 禁言某玩家。<br>&#x2F;unban &lt;玩家&gt; – 解除封禁。<br>&#x2F;tp &lt;玩家&gt; – 傳送到某玩家。<br>&#x2F;tphere &lt;玩家&gt; – 讓某玩家傳送到你這裡。<br>&#x2F;tpo &lt;玩家&gt; – 強制傳送到某玩家。<br>&#x2F;tpohere &lt;玩家&gt; – 強制讓某玩家傳送到你這裡。<br>&#x2F;tpall – 將所有玩家傳送到你這裡。<br>&#x2F;sudo &lt;玩家&gt; &lt;指令&gt; – 強制某玩家執行指令。</p>
+<h2 id="伺服器管理指令"><a href="#伺服器管理指令" class="headerlink" title="伺服器管理指令"></a>伺服器管理指令</h2><p>&#x2F;setspawn – 設置出生點。<br>&#x2F;motd – 設置伺服器的每日訊息。<br>&#x2F;broadcast &lt;訊息&gt; 或 &#x2F;bc &lt;訊息&gt; – 發送全服公告。<br>&#x2F;kill &lt;玩家&gt; – 殺死某玩家。<br>&#x2F;heal &lt;玩家&gt; – 治療某玩家。<br>&#x2F;feed &lt;玩家&gt; – 餵飽某玩家。<br>&#x2F;ext &lt;玩家&gt; – 撲滅某玩家身上的火。<br>&#x2F;speed &lt;速度&gt; [玩家] – 設置移動速度（1-10）。<br>&#x2F;seen &lt;玩家&gt; – 查看某玩家最後上線時間。<br>&#x2F;socialspy – 監聽私訊（管理員專用）。</p>
+<h2 id="其他實用指令"><a href="#其他實用指令" class="headerlink" title="其他實用指令"></a>其他實用指令</h2><p>&#x2F;workbench 或 &#x2F;wb – 打開工作台。<br>&#x2F;anvil – 打開鐵砧。<br>&#x2F;craft – 打開合成台。<br>&#x2F;enderchest 或 &#x2F;ec – 打開終界箱。<br>&#x2F;disposal – 打開垃圾桶。<br>&#x2F;near – 查看附近的玩家。<br>&#x2F;suicide – 自殺。<br>&#x2F;jump – 傳送到你看向的位置。<br>&#x2F;thru – 穿過面前的牆壁。</p>
+<h1 id="其他插件指令"><a href="#其他插件指令" class="headerlink" title="其他插件指令"></a>其他插件指令</h1><h2 id="Floodgate"><a href="#Floodgate" class="headerlink" title="Floodgate"></a>Floodgate</h2><p>用途： 允許基岩版玩家加入 Java 版伺服器（需配合 Geyser）。</p>
+<h2 id="Geyser"><a href="#Geyser" class="headerlink" title="Geyser"></a>Geyser</h2><p>用途： 讓基岩版玩家可以連接到 Java 版伺服器。</p>
+<p>指令：</p>
+<p>&#x2F;geyser help – 查看 Geyser 指令幫助。<br>&#x2F;geyser reload – 重新載入 Geyser 配置。<br>&#x2F;geyser version – 查看 Geyser 版本。</p>
+<h2 id="LuckPerms"><a href="#LuckPerms" class="headerlink" title="LuckPerms"></a>LuckPerms</h2><p>用途： 管理玩家權限和群組。</p>
+<p>指令：</p>
+<p>&#x2F;lp – 查看 LuckPerms 指令幫助。<br>&#x2F;lp user &lt;玩家&gt; permission set &lt;權限&gt; – 為玩家設置權限。<br>&#x2F;lp group &lt;群組&gt; permission set &lt;權限&gt; – 為群組設置權限。<br>&#x2F;lp user &lt;玩家&gt; parent add &lt;群組&gt; – 將玩家加入群組。<br>&#x2F;lp creategroup &lt;群組&gt; – 創建新群組。<br>&#x2F;lp deletegroup &lt;群組&gt; – 刪除群組。<br>&#x2F;lp listgroups – 列出所有群組。<br>&#x2F;lp editor – 打開權限編輯器。</p>
+<h2 id="Maintenance"><a href="#Maintenance" class="headerlink" title="Maintenance"></a>Maintenance</h2><p>用途： 設置伺服器維護模式。</p>
+<p>指令：</p>
+<p>&#x2F;maintenance – 切換維護模式。<br>&#x2F;maintenance add &lt;玩家&gt; – 允許某玩家在維護期間進入。<br>&#x2F;maintenance remove &lt;玩家&gt; – 移除某玩家的維護權限。<br>&#x2F;maintenance list – 查看允許進入的玩家列表。</p>
+
+                
+                <p class="end">__END__</p>
+            </div>
+            <div class="article-footer">
+                <div class="suffix-box">
+    <div class="suffix-box-left">
+        <img src="/image/sidebar/avatar.jpg" alt="ian">
+    </div>
+    <div class="suffix-box-right">
+        <span class="suffix-box-title">文章作者：</span>ian
+        <br>
+        <span class="suffix-box-title">文章出处：</span><a href="/posts/1112885395/" target="_blank">ian</a>
+        <br>
+        <span class="suffix-box-title">作者签名：</span>一個喜歡程式的人
+        <br>
+        <span class="suffix-box-title">关于主题：</span><a href="https://github.com/first19326/Hexo-LiveForCode" target="_blank">Hexo - Live For Code</a>
+        <br>
+        <span class="suffix-box-title">版权声明：</span>文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" title="BY-NC-SA" target="_blank">BY-NC-SA</a> 许可协议，转载请注明出处
+        <br>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+                
+                    <div class="category">
+                        分类：
+                        
+                            <a href="/category/mc-server/">mc server</a>
+                        
+                    </div>
+                
+                
+                    <div class="tag">
+                        标签：
+                        
+                            <a href="/tag/%E6%A8%99%E7%B1%A4/">標籤</a>
+                        
+                    </div>
+                
+                <div class="article-prev-next">
+                    
+                    
+                </div>
+            </div>
+            <!-- 评论框 -->
+<div id="twikoo"></div>
+
+<!-- Twikoo JS 引入 -->
+<script src="https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js"></script>
+<script>
+  twikoo.init({
+    el: '#twikoo', // Twikoo 评论容器
+    envId: 'https://mytwikoo-kappa.vercel.app/', // 你的 Twikoo API 端点
+    path: location.pathname.replace(/\.html$/, '').replace(/\/$/, '') || '/' // 去掉 .html 和末尾斜线
+  });
+</script>
+
+        </div>
+    
+</div>
+    
+    <div id="sidebar">
+    <div class="menu-wrap" style="display:none;">
+        
+            <div class="menu-notice">
+                <span class="iconfont icon-notice"></span>
+                <div class="notice">
+                    <span>简单地活着，肆意而又精彩！</span>
+                </div>
+            </div>
+        
+        <nav class="menu">
+            <div class="menu-introduce"> 
+                <div class="introduce-avatar">
+                    <img src="/image/sidebar/avatar.jpg">
+                </div> 
+                <div class="introduce-info"> 
+                    <div class="introduce-user">
+                        
+                            <a href="https://ianip.eu.org" target="_blank"><span>ian</span></a>
+                        
+                    </div>
+                </div> 
+            </div> 
+            <div class="menu-list">
+                <ul>
+                    
+                        <li class=""><a href="/" class="" target="_self"><span class="iconfont icon-home-fill"></span>首页</a></li>
+                    
+                        <li class=""><a href="/category" class="" target="_self"><span class="iconfont icon-folder-fill"></span>分类</a></li>
+                    
+                        <li class=""><a href="/tag" class="" target="_self"><span class="iconfont icon-discount-fill"></span>标签</a></li>
+                    
+                        <li class=""><a href="/archive" class="" target="_self"><span class="iconfont icon-calendar-fill"></span>归档</a></li>
+                    
+                        <li class=""><a href="/about" class="" target="_self"><span class="iconfont icon-about-fill"></span>关于</a></li>
+                    
+                        <li class=""><a href="javascript:;" class="search" target="_self"><span class="iconfont icon-search-menu"></span>搜索</a></li>
+                    
+                        <li class=""><a href="/comment" class="" target="_self"><span class="iconfont icon-comments-fill"></span>留言板</a></li>
+                    
+                </ul> 
+            </div> 
+            <div class="menu-link">
+                <div class="box">
+                    <div class="image-box"></div>
+                </div>
+                
+                    <a name="Youtube" href="https://youtube.com/@jusoyi0405S" class="" target="_blank" data=""><span class="iconfont icon-youtube"></span></a>
+                
+            </div> 
+        </nav>
+        <button class="menu-button-close"></button>
+        <div class="morph-shape" id="morph-shape" data-morph-open="M-7.312,0H15c0,0,66,113.339,66,399.5C81,664.006,15,800,15,800H-7.312V0z;M-7.312,0H100c0,0,0,113.839,0,400c0,264.506,0,400,0,400H-7.312V0z">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 800" preserveAspectRatio="none">
+                <path d="M-7.312,0H0c0,0,0,113.839,0,400c0,264.506,0,400,0,400h-7.312V0z"/>
+            </svg>
+        </div>
+    </div>
+    <button class="menu-button-open">MENU</button>
+    <div class="menu-cover"></div>
+</div>
+    <link type="text/css" rel="stylesheet" href="/css/search.css">
+<script type="text/javascript" src="/js/iscroll.js"></script>
+<script type="text/javascript" src="/js/instantsearch.min.js"></script>
+<div class="search-window">
+    <div class="search-content">
+        <div class="search-content-icon">
+            <i class="iconfont icon-search"></i>
+        </div>
+        <div id="search-input" class="search-input"></div>
+    </div>
+
+    <div class="search-scroll">
+        <div class="search-result">
+            <div id="search-stats" class="search-stats"></div>
+            <div id="search-hits"></div>
+            <div id="search-pagination" class="search-pagination"></div>
+        </div>
+    </div>
+
+    <span class="search-close-icon">
+        <i class="iconfont icon-close"></i>
+    </span>
+</div>
+    <div id="tools">
+    <div class="progressbar-top"></div>
+    
+    <link type="text/css" rel="stylesheet" href="/css/APlayer.css">
+    <script type="text/javascript" src="/js/APlayer.min.js"></script>
+    <script type="text/javascript" src="/js/Meting.min.js"></script>
+    <script>
+        var meting_api = 'https://api.i-meto.com/meting/api?server=:server&type=:type&id=:id&auth=:auth&r=:r';
+    </script>
+    <meting-js id="3778678" lrcshow="false" server="netease" type="playlist" fixed="true" autoplay="false" loop="all" order="random" preload="auto" volume="0.67" mutex="true"></meting-js>
+
+    <div class="wrap-right">
+    <div class="wrap-right-hide">
+         <div class="wrap-right-button favorites">
+            <div class="iconbox" switch="false">
+                <span class="iconfont icon-favorites"></span>
+            </div>
+            <span class="icontext">关注</span>
+         </div>
+        <div class="wrap-right-button search">
+            <div class="iconbox">
+                <span class="iconfont icon-search-menu"></span>
+            </div>
+            <span class="icontext">搜索</span>
+        </div>
+        <div class="wrap-right-button menu-button">
+            <div class="iconbox">
+                <span class="iconfont icon-menu"></span>
+            </div>
+            <span class="icontext">菜单</span>
+        </div>
+        <div class="wrap-right-button mode">
+            <div class="light">
+                <div class="iconbox">
+                    <span class="iconfont icon-daymode"></span>
+                </div>
+                <span class="icontext">浅色模式</span>
+            </div>
+            <div class="dark">
+                <div class="iconbox">
+                    <span class="iconfont icon-nightmode-fill"></span>
+                </div>
+                <span class="icontext">深色模式</span>
+            </div>
+        </div>
+        <div class="wrap-right-button bottom">
+            <div class="iconbox">
+                <span class="iconfont icon-top"></span>
+            </div>
+            <span class="icontext">跳至底部</span>
+        </div>
+    </div>
+    <div class="wrap-right-show">
+        <div class="wrap-right-button set">
+            <div class="iconbox">
+                <span class="iconfont icon-setting"></span>
+            </div>
+            <span class="icontext">设置</span>
+        </div>
+        <div class="wrap-right-button top">
+            <div class="iconbox">
+                <span class="iconfont icon-top"></span>
+            </div>
+            <span class="icontext">返回顶部</span>
+        </div>
+    </div>
+</div>
+    <div class="loading"></div>
+</div>
+    <script>
+    window.config = {
+        GitHubUserName     : "jusoyi0405",
+        GitHubRepositories : "jusoyi0405.github.io",
+
+        User             : "ian",
+        UserAvatar       : "/image/sidebar/avatar.jpg",
+        WebsiteStartDate : "2025-4-28",
+        Home             : "https://ianip.eu.org",
+
+        WebsiteTitleBlur         : "(◍´꒳`◍) 不要走",
+        WebsiteTitleBlurTimeOut  : 500,
+        WebsiteTitleFocus        : "(*´∇｀*) 歡迎回來!",
+        WebsiteTitleFocusTimeOut : 1000,
+        WebsiteFavicon           : {
+            light : "/image/website/logo/logo.png",
+            dark  : "/image/website/logo/logo-dark.png"
+        },
+
+        ProgressBar : {
+            id       : "topProgressBar",
+            color    : "#77B6FF",
+            height   : "2px",
+            duration : 0.2
+        },
+
+        Loading: {
+            rebound : {
+                tension  : 16,
+                friction : 5
+            },
+            spinner : {
+                id     : "spinner",
+                radius : 90,
+                sides  : 3,
+                depth  : 4,
+                colors : {
+                    background : "#F0F0F0",
+                    stroke     : "#272633",
+                    base       : "",
+                    child      : "#272633"
+                },
+                alwaysForward : true,
+                restAt        : 0.5,
+                renderBase    : false
+            }
+        },
+
+        HomeHeaderAnimationRendered : true,
+        HomeHeaderAnimation         : {
+            radius      : 15,
+            density     : 0.2,
+            color       : "rgba(255, 255, 255, .2)",
+            clearOffset : 0.3
+        },
+
+        BackAnimationRendered          : true,
+        IEBrowserBackAnimationRendered : false,
+        BackAnimation                  : {
+            colorSaturation  : "60%",
+            colorBrightness  : "50%",
+            colorAlpha       : 0.5,
+            colorCycleSpeed  : 5,
+            verticalPosition : "random",
+            horizontalSpeed  : 200,
+            ribbonCount      : 3,
+            strokeSize       : 0,
+            parallaxAmount   : -0.2,
+            animateSections  : true
+        },
+
+        HomeHeaderImage : [
+            
+                "/image/header/home.jpg",
+            
+                "/image/header/home.jpeg",
+            
+                "/image/header/article.jpg",
+            
+                "/image/header/back.jpeg",
+            
+                "/image/header/back.jpg",
+            
+                "/image/header/future.jpg",
+            
+        ],
+        HomeBannerText  : "",
+
+        ArticleHeaderImage : [
+            
+                "/image/header/home.jpg",
+            
+                "/image/header/home.jpeg",
+            
+                "/image/header/article.jpg",
+            
+                "/image/header/back.jpeg",
+            
+                "/image/header/back.jpg",
+            
+                "/image/header/future.jpg",
+            
+        ],
+
+        OtherBannerText : "",
+
+        Error : {
+            icon    : "icon-swimming",
+            title   : "PAGE NOT FOUND",
+            content : [
+                
+                    "很抱歉，您访问的页面不存在！",
+                
+                    "可能是输入地址有误或该地址已变更。",
+                
+            ],
+            buttons : [
+                
+                    {
+                        icon  : "icon-home",
+                        text  : "返回首页",
+                        href  : "/",
+                        class : ""
+                    },
+                
+            ]
+        },
+
+        MenuNotice : {
+            enable : true,
+            notice : "简单地活着，肆意而又精彩！",
+            speed  : 20
+        },
+        MenuList : [
+            
+                {
+                    name   : "首页",
+                    icon   : "icon-home-fill",
+                    href   : "/",
+                    type   : "index",
+                    class  : "",
+                    target : "_self"
+                },
+            
+                {
+                    name   : "分类",
+                    icon   : "icon-folder-fill",
+                    href   : "/category",
+                    type   : "category",
+                    class  : "",
+                    target : "_self"
+                },
+            
+                {
+                    name   : "标签",
+                    icon   : "icon-discount-fill",
+                    href   : "/tag",
+                    type   : "tag",
+                    class  : "",
+                    target : "_self"
+                },
+            
+                {
+                    name   : "归档",
+                    icon   : "icon-calendar-fill",
+                    href   : "/archive",
+                    type   : "archive",
+                    class  : "",
+                    target : "_self"
+                },
+            
+                {
+                    name   : "关于",
+                    icon   : "icon-about-fill",
+                    href   : "/about",
+                    type   : "about",
+                    class  : "",
+                    target : "_self"
+                },
+            
+                {
+                    name   : "搜索",
+                    icon   : "icon-search-menu",
+                    href   : "javascript:;",
+                    type   : "",
+                    class  : "search",
+                    target : "_self"
+                },
+            
+                {
+                    name   : "留言板",
+                    icon   : "icon-comments-fill",
+                    href   : "/comment",
+                    type   : "comment",
+                    class  : "",
+                    target : "_self"
+                },
+            
+        ],
+        MenuLink : [
+            
+                
+                    {
+                        name   : "Youtube",
+                        icon   : "icon-youtube",
+                        href   : "https://youtube.com/@jusoyi0405S",
+                        class  : "",
+                        target : "_blank",
+                        image  : ""
+                    },
+                
+            
+        ],
+
+        FooterStyle : 2,
+        BottomText  : "<div><span class='face'>ღゝ◡╹)ノ♡</span></div><div>【人生若只如初见<span><i class='iconfont icon-like-fill'></i></span>何事秋风悲画扇】</div><div>&copy; 2020-2023 WorstOne. All Rights Reserved.</div>",
+
+        ConsoleList : [
+            
+                
+                    [
+                        
+                            
+                                "Based on cnblogs theme SimpleMemory.",
+                            
+                                "",
+                            
+                        
+                    ],
+                
+                    [
+                        
+                            
+                                "SimpleMemory Author:",
+                            
+                                "BNDong",
+                            
+                        
+                    ],
+                
+                    [
+                        
+                            
+                                "Theme:",
+                            
+                                "LiveForCode",
+                            
+                        
+                    ],
+                
+            
+        ],
+
+        FontIconExtend : "",
+
+        Search : {
+            applicationID : "010C3EANT8",
+            apiKey        : "c7abab9f11b79102b9aff7fe6d41447d",
+            indexName     : "Notes",
+            hits          : {
+                page : 10
+            },
+            labels        : {
+                placeholder : "搜索",
+                empty       : "未发现与 「${query}」 相关的内容",
+                stats       : "${hits} 条相关条目，使用了 ${time} 毫秒",
+            }
+        }, 
+
+        Comment : {
+            switch : true,
+            type   : "Valine",
+        },
+
+        Waline : {
+            el              : ".comments-content",
+            serverURL       : "",
+            path            : window.location.pathname,
+            meta            : "['nick', 'mail', 'link']",
+            requiredMeta    : "['nick', 'mail']",
+            pageSize        : 10,
+            lang            : "zh-cn",
+            locale: {
+                admin       : "博主",
+                anonymous   : "匿名用户",
+                sofa        : "快来做第一个评论的人吧 ~",
+                placeholder : "你是我一生只会遇见一次的惊喜...",
+            },
+            dark            : "html[color-scheme='dark']",
+            search          : false,
+            pageview        : true,
+            comment         : true,
+            copyright       : false,
+        },
+
+        Valine : {
+            el             : ".comments-content",
+            appId          : "srhKtvWPQTWYKh3qX8G8M7v0-gzGzoHsz",
+            appKey         : "8uVSP1q6UlALVC5igYfIfv2h",
+            serverURLs     : "",
+            placeholder    : "你是我一生只会遇见一次的惊喜...",
+            avatar         : "mm",
+            meta           : "nick,mail,link",
+            requiredFields : "nick,mail",
+            pageSize       : 5,
+            lang           : "zh-cn",
+            visitor        : true,
+            enableQQ       : true
+        },
+
+        Tocbot : {
+            switch                : true,
+            tocSelector           : ".toc",
+            contentSelector       : ".article-body",
+            headingSelector       : "h1, h2, h3, h4, h5",
+            headingsOffset        : 0,
+            scrollSmooth          : true,
+            scrollSmoothOffset    : -5,
+            positionFixedSelector : ".toc",
+            positionFixedClass    : "toc-fixed",
+            fixedSidebarOffset    : "",
+        },
+
+        Require : {
+            baseUrl     : "/js/",
+            waitSeconds : 100
+        },
+
+        Music : {
+            type : "Meting"
+        },
+        APlayer : {
+            container : ".aplayer",
+            fixed     : true,
+            autoplay  : false,
+            loop      : "all",
+            order     : "random",
+            preload   : "auto",
+            volume    : 0.67,
+            mutex     : true,
+            lrcType   : 3,
+            audio     : [
+                
+                    {
+                        name   : "Endless Tears",
+                        artist : "CLIFF EDGE",
+                        cover  : "/music/cover/Endless Tears.jpg",
+                        url    : "/music/song/Endless Tears.mp3",
+                        lrc    : "/music/lrc/Endless Tears.lrc"
+                    },
+                
+            ]
+        },
+        Meting : {
+            api      : "https://api.i-meto.com/meting/api",
+            id       : "3778678", 
+            lrcshow  : false, 
+            server   : "netease", 
+            type     : "playlist", 
+            fixed    : true, 
+            autoplay : false, 
+            loop     : "all", 
+            order    : "random", 
+            preload  : "auto", 
+            volume   : 0.67, 
+            mutex    : true
+        },
+
+        Mouse : {
+            enable  : true,
+            options : {
+                size  : 6,
+                sizeF : 24
+            }
+        },
+
+        LazyLoad : {
+            default : "/image/website/lazyload.svg"
+        },
+  
+        Style : {
+            aplayer          : "/css/APlayer.css",
+            archive          : "/css/archive.css",
+            base             : "/css/base.css",
+            clipboard        : "/css/clipboard.css",
+            code             : "/css/code.css",
+            fancybox         : "/css/jquery.fancybox.css",
+            footer           : "/css/footer.css",
+            iconfont         : "/iconfont/iconfont.css",
+            index            : "/css/index.css",
+            menuBubble       : "/css/menu-bubble.css",
+            mouse            : "/css/mouse.css",
+            page             : "/css/page.css",
+            post             : "/css/post.css",
+            search           : "/css/search.css",
+            tocbot           : "/css/tocbot.css",
+            valine           : "/css/valine.css",
+            waline           : "/css/waline.css",
+            walineCustom     : "/css/waline-custom.css"
+        },
+
+        Script: {
+            aplayer          : "/js/APlayer.min.js",
+            config           : "/js/require.config.js",
+            index            : "/js/index.js",
+            instantSearch    : "/js/instantsearch.min.js",
+            iscroll          : "/js/iscroll.js",
+            jQuery           : "/js/jquery-3.4.1.min.js",
+            loading          : "/js/loading.js",
+            meting           : "/js/Meting.min.js",
+            require          : "/js/require.min.js",
+            waline           : "/js/waline.mjs",
+            pageview         : "/js/pageview.mjs",
+            comment          : "/js/comment.mjs",
+        },
+
+        Font: {
+            LongCang    : "/font/LongCang.css",
+            Monda       : "/font/Monda.css",
+            NotoSansSC  : "/font/NotoSansSC.css",
+            NotoSerifSC : "/font/NotoSerifSC.css",
+            Playball    : "/font/Playball.css",
+            PTMono      : "/font/PTMono.css",
+            Roboto      : "/font/Roboto.css",
+            RobotoSlab  : "/font/RobotoSlab.css",
+            Rosario     : "/font/Rosario.css",
+            UbuntuMono  : "/font/UbuntuMono.css"
+        },
+
+        Suffix : {
+            about : "简单地活着, 肆意又精彩."
+        },
+            
+        Theme : {
+            url  : "https://github.com/first19326/Hexo-LiveForCode",
+            name : "Hexo - Live For Code"
+        }  
+    };
+</script>
+    <script type="text/javascript" src="/js/index.js"></script>
+</body>
+</html>
